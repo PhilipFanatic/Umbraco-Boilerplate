@@ -1,0 +1,61 @@
+/*!
+Theme Name: Chassis by Fanatic
+Theme URI: https://fanatic.co.uk/
+Author: Fanatic Design
+Author URI: https://fanatic.co.uk/
+Description: Providing the framework to build a completely bespoke WordPress website.
+Version: 1.0.0
+*/
+
+@tailwind base; // This includes "Preflight" which includes cross-browser style normalisation
+@tailwind components; // This includes Tailwind's component classes
+@tailwind utilities; // Includes Tailwind Utility classes
+
+// import google font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+// Import base custom styling
+@import "base/base"; // Foundational styles
+@import "base/typography"; // Typography styles
+@import "base/wp-default-classes"; // Custom styles for WP default classes
+
+/*
+Import various component-based styling
+*/
+// "Common" component styles
+@import "components/common/footer";
+@import "components/common/header";
+
+// "Element" component styles
+@import "components/elements/buttons";
+@import "components/elements/forms";
+@import "components/elements/navigation";
+
+// "Flexible Row" component styles
+@import "components/flexible-rows/banner-row";
+@import "components/flexible-rows/text-image-row";
+
+// "Layout" component styles
+@import "components/layout/card";
+@import "components/layout/hero";
+/*
+END Import various component-based styling
+*/
+
+
+/*
+Import various Page Template-related styles
+*/
+// Page template styles
+@import "page-templates/pages/home-template";
+@import "page-templates/pages/page-template";
+
+// "Archive" page template styles
+@import "page-templates/archives/post-types/blog-archive";
+@import "page-templates/archives/taxonomies/category-archive";
+
+// "Singles" page template styles
+@import "page-templates/singles/blog-single-template";
+/*
+END Import various Page Template-related styles
+*/

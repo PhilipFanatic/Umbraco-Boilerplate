@@ -1,0 +1,46 @@
+html {
+    @apply h-full scroll-smooth;
+}
+
+body{
+    @apply min-h-screen text-base;
+}
+
+*{
+    @apply box-border p-0 m-0;
+}
+
+ul{
+    @apply ml-8 mb-8 list-disc; 
+}
+
+ol{
+    @apply ml-8 mb-8 list-decimal; 
+}
+
+p{
+    @apply mb-4;
+}
+
+strong, b{
+    @apply font-bold;
+}
+
+em, i, dfn{
+    @apply italic;
+}
+
+del{
+    @apply line-through;
+}
+
+blockquote{
+    @apply ml-12;
+}
+
+a{
+    @apply underline text-sunset-orange cursor-pointer;
+    transition-property: color, opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
